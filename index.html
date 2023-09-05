@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Mr.J's - Portfolio</title>
 </head>
 <body>
@@ -35,7 +36,7 @@
                 <a href="https://github.com/Hardin-J"><i class="fa-brands fa-github" target="_blank"></i></a>
             </div>
             
-            <a href="Resume.pdf" class="btn">Download CV</a>
+            <a href="#" id="resume" class="btn">Download CV</a>
         </div>
         <div class="home-img">
             <img src="Images/pro.png" alt="profile-picture">
@@ -141,4 +142,12 @@
     </section>
     <script src="js/script.js"></script>
 </body>
+<script>
+    $(document).ready(function (){
+        $('#resume').click(function (e) {
+            e.preventDefault();
+            window.location.href = "Resume.pdf";
+        });
+    });
+</script>
 </html>
